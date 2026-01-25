@@ -54,3 +54,12 @@ int main() {
   return 0;
 }
 ```
+
+*** 
+
+## Automatic New line bug fix
+
+-> When we use fgets and takes string as an input it also takes enter as input and stores it as \n(newline) and while printing that string it automatically adds new line and that is an bug in the code. To fix that we will use `<string.h>` C library and use this code line after the string input -- 
+```c
+buffer[strcspn(buffer,"\n")] = 0;
+```
