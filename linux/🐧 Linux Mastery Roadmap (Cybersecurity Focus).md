@@ -28,8 +28,8 @@ Use this as a checklist in Obsidian. Do NOT skip ahead.
 
 ## Permissions
 
-* [ ] Understand users & groups
-* [ ] Master chmod (symbolic + numeric)
+* [x] Understand users & groups
+* [x] Master chmod (symbolic + numeric)
 * [ ] Master chown & chgrp
 * [ ] Understand 755, 644, etc.
 * [ ] Learn SUID, SGID, Sticky Bit
@@ -41,21 +41,21 @@ Use this as a checklist in Obsidian. Do NOT skip ahead.
 
 ## User Management
 
-* [ ] Understand /etc/passwd
-* [ ] Understand /etc/shadow
-* [ ] Understand /etc/group
-* [ ] Create and manage users (useradd, adduser)
+* [x] Understand /etc/passwd
+* [x] Understand /etc/shadow
+* [x] Understand /etc/group
+* [x] Create and manage users (useradd, adduser)
 * [ ] Configure sudo
 
 ## Process Management
 
-* [ ] Understand what a process is
-* [ ] Learn PID & parent-child processes
-* [ ] Use ps effectively
-* [ ] Use top / htop
-* [ ] Use kill & killall
+* [x] Understand what a process is
+* [x] Learn PID & parent-child processes
+* [x] Use ps effectively
+* [x] Use top / htop
+* [x] Use kill & killall
 * [ ] Understand signals (SIGTERM, SIGKILL)
-* [ ] Use background jobs (&)
+* [x] Use background jobs (&)
 * [ ] Learn nice & renice
 
 ---
@@ -68,8 +68,8 @@ Use this as a checklist in Obsidian. Do NOT skip ahead.
 * [ ] Understand ss & netstat
 * [ ] Use ping & traceroute
 * [ ] Use dig
-* [ ] Understand /etc/hosts
-* [ ] Identify listening ports
+* [x] Understand /etc/hosts
+* [x] Identify listening ports
 * [ ] Understand how services bind to ports
 
 ## Logs & Monitoring
@@ -110,8 +110,8 @@ Use this as a checklist in Obsidian. Do NOT skip ahead.
 
 ## Services
 
-* [ ] Use systemctl to manage services
-* [ ] Enable/disable services at boot
+* [x] Use systemctl to manage services
+* [x] Enable/disable services at boot
 * [ ] Understand what daemons are
 * [ ] Inspect running services
 
@@ -137,7 +137,7 @@ Use this as a checklist in Obsidian. Do NOT skip ahead.
 
 ## Development Basics
 
-* [ ] Compile simple C program using gcc
+* [x] Compile simple C program using gcc
 * [ ] Understand make (concept)
 * [ ] Understand PATH variable
 * [ ] Run compiled binaries
