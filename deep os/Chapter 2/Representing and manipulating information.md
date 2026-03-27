@@ -77,7 +77,7 @@ Final Result -> 1011
 ### Hex to binary
 
 *Hexdecimal consists of 0-9 and a-f. Which are 16total and hence its called base16.The memory address of an variable in ram is also an hexadecimal which looks like `0x353af`.
-Here `0x` contributes 0 bytes , `0x`,it just sets prefix that next elements will be hexadecimals.*
+Here `0x` contributes 0 bytes , `0x`,it just sets prefix offset that next elements will be hexadecimals.*
 ***One hex -> 4bits/A half bit***
 
 ```mermaid
