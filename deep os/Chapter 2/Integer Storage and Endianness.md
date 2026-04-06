@@ -1,3 +1,9 @@
+---
+id: Integer Storage and Endianness
+aliases: []
+tags: []
+---
+
 
 ---
 
@@ -68,3 +74,7 @@ To convert decimal into binary, use the **divide by 2 method**:
 
 - One **hexadecimal** digit is equal to **4 bits**
     - → **1 Nibble**
+
+---
+
+Lets move onto the concepts of boolean algebra [[booleanAlgebra]]

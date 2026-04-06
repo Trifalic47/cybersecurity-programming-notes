@@ -1,3 +1,9 @@
+---
+id: Representing and manipulating information
+aliases: []
+tags: []
+---
+
 ***
 
 ![[Pasted image 20260313140845.png]]
@@ -137,7 +143,7 @@ Read remainders bottom to top → **1111**
 
 ***
 
-## Converting decimal to hex 
+## Converting decimal to hex
 
 *Decimals are our base10(0-9).So to convert decimal into hex/base16 we have to divide from 16*
 
@@ -178,3 +184,5 @@ flowchart TD
 **Result: 0xDB**
 
 > 💡 Only remainders 10 and above get converted to letters A-F. The rest stay as digits.
+
+Now lets move to the next Concept -> [[Integer Storage and Endianness]]

@@ -1,3 +1,9 @@
+---
+id: Processes, Files, and File Descriptors in Linux
+aliases: []
+tags: []
+---
+
 ***
 
 ## File Descriptors
@@ -5,7 +11,7 @@
 *When we open an new file in our operating system so an new unique entry of that file is made which points to the actual path of the file.File descriptor looks like 1001,4,5,6,7,34,64 means any integeral number.
 And note one thing: `file descriptor is made when an file is opened and it gets removed when the file is closed,we can also see the file descriptors currently working in our system by going in /proc/<PID>/fd/.
 
-But when you ls in the fd directory you will see that there is 0,1 and 2 fds'.Actually `0 = stdin` 
+But when you ls in the fd directory you will see that there is 0,1 and 2 fds'.Actually `0 = stdin`
 `1 = stdout and 2 = stderr`
 In depth `stdin` means `standard input` which is resource to take input from user and give it to memory. `stdout` means `standarad output` which helps to print output on our screen.`stderr` means `standarad error` which display errors when there is some misconfiguration.
 ##### Real life example of stdin stdout and stderr
@@ -22,7 +28,7 @@ Here you will see multiple subdirectories and the name will be like 3,34,425.The
 Command to access the processes:
 You can use the `btop,top,htop or vtop` to see the current running processes but you can also do using commands like:
 ```shell
-ps aux | grep kitty 
+ps aux | grep kitty
 ```
 This will list all the kitty processes.It will look like this:
 ![[Pasted image 20260204135938.png]]
@@ -56,6 +62,6 @@ You can also access pseudo terminals session by going in `/dev/pts/<terminalID>`
 
 ***
 
-## Devices are also treated as files in linux 
+## Devices are also treated as files in linux
 
 *The devices are also treated as files like if you connected an USB pendrive so it will considered as file and its location will be in `/dev/sda` or other.The USB mouse and keyboard are also saved as `/dev/hidraw , /dev/hidraw1`
