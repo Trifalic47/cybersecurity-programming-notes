@@ -33,3 +33,9 @@ learning course.We use the operators like the `&`,`|`,`~` and `^`.These compares
 basis of their printing value which means that they compares on their `base2` values not the `ASCII`.
 
 ![[booleanArith1.png]]
+
+---
+
+# Next Topic
+
+Now lets move to the next topic which is [[shiftOperators]]
